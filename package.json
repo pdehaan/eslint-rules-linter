@@ -1,0 +1,35 @@
+{
+  "name": "eslint-rules-linter",
+  "description": "Silly ESLint rule scraper so I can lint ESLint configs.",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com>",
+  "bin": {
+    "eslint-rules-linter": "cli.mjs"
+  },
+  "bugs": {
+    "url": "https://github.com/pdehaan/eslint-rules-linter/issues"
+  },
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cheerio": "^1.0.0-rc.10",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.16.5",
+    "eslint": "^8.7.0"
+  },
+  "homepage": "https://github.com/pdehaan/eslint-rules-linter#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": "lib.mjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/eslint-rules-linter.git"
+  },
+  "scripts": {
+    "lint": "eslint *.mjs",
+    "print-config": "npx eslint --print-config cli.mjs > default.rules.json",
+    "start": "./cli.mjs",
+    "test": "node test-lint.mjs"
+  }
+}

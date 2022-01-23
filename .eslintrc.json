@@ -1,0 +1,21 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "requireConfigFile": false,
+    "sourceType": "module"
+  },
+  "rules": {
+    "camelCase": 1,
+    "no-dupe-keys": ["warn"],
+    "no-dupe-else-if": "warn",
+    "space-unary-ops": ["off", { "words": false, "nonwords": false }]
+  }
+}
