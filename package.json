@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "author": "Peter deHaan <peter@deseloper.com>",
   "bin": {
-    "eslint-rules-linter": "cli.mjs"
+    "eslint-rules-linter": "./cached.mjs",
+    "cached": "./cached.mjs",
+    "download": "./download.mjs"
   },
   "bugs": {
     "url": "https://github.com/pdehaan/eslint-rules-linter/issues"
